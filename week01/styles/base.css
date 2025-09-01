@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+header span {
+  display: block;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+main {
+  width: 99%;
+  align-items: center;
+  justify-content: center;
+  margin: 1em;
+}
