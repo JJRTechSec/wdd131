@@ -1,3 +1,11 @@
+:root {
+  --colour-primary: rgb(112, 224, 0);
+  --colour-secondary: rgb(0, 128, 0);
+  --colour-third: rgb(204, 255, 51);
+  --font1: 'Montserrat' sans-serif;
+  --font2: 'Inter' sans-serif;
+}
+
 html {
   height: 100%;
   margin: 0;
@@ -23,6 +31,7 @@ header span {
 
 header {
   background-color: lightgray;
+  font-family: var(--font1);
 }
 
 nav {
@@ -31,17 +40,20 @@ nav {
   align-items: center;
   justify-content: space-around;
   padding: 1em;
-  background-color: lime;
+  background-color: var(--colour-primary);
 }
 
 nav a {
   color: black;
   text-decoration: none;
   font-size: 1.5em;
+  font-family: var(--font1);
+  font-weight: 400;
 }
 
 nav a:hover {
   text-decoration: underline;
+  background-color: var(--colour-third);
 }
 
 main {
@@ -54,6 +66,12 @@ main {
   grid-column-gap: 1em;
 }
 
+p,
+ul {
+  font-family: var(--font2);
+  font-size: 1em;
+}
+
 .author-name {
   grid-column: 1 / 4;
   text-align: center;
@@ -61,6 +79,7 @@ main {
 
 .card {
   display: grid;
+  border-radius: 6px;
 }
 
 .card1 {
@@ -74,6 +93,10 @@ main {
 .card1 .card-title{
   text-align: center;
   grid-column: 1 / 7;
+  background-color: var(--colour-secondary);
+  margin-top: 0;
+  height: 1.4em;
+  align-items: center;
 }
 
 .personal-intro {
@@ -90,6 +113,7 @@ main {
   grid-column: 2 / 6;
   text-align: center;
   border-bottom: 1px solid black;
+  font-family: var(--font1);
 }
 
 .flag-img {
@@ -150,6 +174,9 @@ main {
 .card2 h2 {
   text-align: center;
   grid-column: 1 / 4;
+  background-color: var(--colour-secondary);
+  height: 1.4em;
+  margin-top: 0;
 }
 
 .card-subtitle {
