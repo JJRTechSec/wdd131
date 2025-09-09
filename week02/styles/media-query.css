@@ -1,0 +1,31 @@
+/* header, main and footer to have max-width: 640px;
+centered using margin: 1rem auto;
+faint border
+appropriate padding
+blueish background color
+*/
+
+/* main has grid with grid-template of only ONE column and equal gap of 1rem */
+
+/* section elements to also have padding with a lighter or white background */
+
+header,
+main,
+footer {
+  max-width: 640px;
+  margin: 1rem auto;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #e0f7fa;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+section {
+  padding: 1rem;
+  background-color: rgb(245, 255, 255);
+}
