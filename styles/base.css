@@ -185,6 +185,11 @@ ul {
   grid-row: 2
 }
 
+.card2 ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 footer {
   height: 75px;
   background-color: lightgray;
