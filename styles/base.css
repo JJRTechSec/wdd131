@@ -185,9 +185,11 @@ ul {
   grid-row: 2
 }
 
-.card2 ul {
-  list-style-type: none;
-  padding: 0;
+.card2 p {
+  padding: 1em;
+  grid-column: 1 / 4;
+  line-height: 2em;
+  border: 1px solid black;
 }
 
 footer {
