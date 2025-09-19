@@ -1,0 +1,18 @@
+@media screen and (min-width: 600px) {
+  body {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  main {
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr 1fr 1fr);
+    margin: 5%;
+  }
+
+  img {
+    width: 250px;
+    height: 150px;
+  }
+}

@@ -20,7 +20,3 @@ figure = document.querySelectorAll('figure');
 
 const londontemple = document.querySelector('figure:nth-of-type(3) .temple-name');
 //console.log(londontemple);
-
-Array.from(figure).forEach(function (figcaption) {
-  console.log(figcaption);
-})
