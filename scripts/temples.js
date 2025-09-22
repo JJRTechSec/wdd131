@@ -11,12 +11,10 @@ const day = date.getDate();
 document.getElementById("lastModified").innerHTML = `Last Modified: ${document.lastModified}`;
 
 // Responsive menu
+const mainnav = document.querySelector('.navigation');
+const hambutton = document.querySelector('#menu');
 
-let figure = document.querySelector('figure');
-//console.log(figure);
-
-figure = document.querySelectorAll('figure');
-//console.log(figure);
-
-const londontemple = document.querySelector('figure:nth-of-type(3) .temple-name');
-//console.log(londontemple);
+hambutton.addEventListener('click', () => {
+  mainnav.classList.toggle('show');
+  hambutton.classList.toggle('show');
+})
