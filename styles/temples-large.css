@@ -28,9 +28,18 @@
     color: var(--color2);
   }
 
-  h2 {
+  header h1 {
     flex: 4;
     margin-left: 2em;
+  }
+
+  ul a {
+    padding: 1em;
+  }
+
+  ul a:hover {
+    background-color: var(--color2);
+    color: var(--color1);
   }
 
   nav {
@@ -47,10 +56,6 @@
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-  }
-
-  li:hover {
-    background-color: var(--color1);
   }
 
   h1 {
