@@ -28,7 +28,7 @@
     color: var(--color2);
   }
 
-  header h2 {
+  header h1 {
     flex: 4;
     margin-left: 2em;
   }
