@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WDD 131 - Dynamic Web Fundamentals - Joseph Jameson-Rickard</title>
   <meta name="description"
-    content="WDD 131 - Dynamic Web Fundamentals, Joseph Jameson-Rickard, Page displaying the current weather in Oslo, Norway.">
+    content="WDD 131 - Dynamic Web Fundamentals, Joseph Jameson-Rickard, Page displaying the current weather in Norway.">
   <meta name="author" content="Joseph Jameson-Rickard">
   <link rel="stylesheet" href="./styles/place.css">
   <link rel="stylesheet" href="./styles/place-large.css">
@@ -16,8 +16,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <!-- SCRIPTS -->
   <script src="scripts/place.js" defer></script>
-  <script src="scripts/functions.js" defer></script>
 </head>
 
 <body>
@@ -29,9 +29,51 @@
 
   <!-- MAIN -->
   <main>
-    <img class="hero" src="" alt="">
-    <section class="data"></section>
-    <section class="weather"></section>
+    <div class="hero">
+      <picture>
+        <source srcset="images/hero-large.webp" media="(min-width: 800px)">
+        <img id="hero" src="images/hero-small.webp" alt="Image of a Norwegian fjord" width="320" height="214">
+      </picture>
+      <section class="data">
+        <h2>Data</h2>
+        <article class="data-type">
+          <p>Area:</p>
+          <p>Population:</p>
+          <p>Capital:</p>
+          <p>Languages:</p>
+          <p>Currency:</p>
+          <p>Time Zone:</p>
+          <p>Calling Code:</p>
+          <p>Internet TLD:</p>
+        </article>
+        <article class="answers">
+          <p>385,207 sq km</p>
+          <p>5,601,049</p>
+          <p>Oslo</p>
+          <p>Norwegian, Sami</p>
+          <p>Norwegian Krone</p>
+          <p>UTC+1</p>
+          <p>+47</p>
+          <p>.no</p>
+        </article>
+      </section>
+      <section class="weather">
+        <h2>Weather ⛅</h2>
+        <article class="data-type weather-data">
+          <p>Temperature:</p>
+          <p>Conditions:</p>
+          <p>Wind:</p>
+          <p>Wind Chill:</p>
+        </article>
+
+        <article class="answers weather-answers">
+          <p id="temperature"></p>
+          <p>Sunny</p>
+          <p id="wind-speed"></p>
+          <p id="wind-chill"></p>
+        </article>
+      </section>
+    </div>
   </main>
 
   <!-- FOOTER -->

@@ -1,0 +1,92 @@
+:root {
+  --norway-red: rgb(186, 13, 47);
+  --norway-blue: rgb(24, 44, 184);
+}
+
+@media screen and (max-width: 799px) {
+  body,
+  html {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    text-align: center;
+    font-size: 1.25em;
+    background-color: var(--norway-red);
+    color: white;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1rem solid var(--norway-blue);
+  }
+
+  main {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    flex: 1;
+  }
+
+  .hero {
+    grid-column: 1 / -1;
+  }
+
+  .hero img {
+    width: 100%;
+    height: auto;
+    border-bottom: 0.25em solid var(--norway-blue);
+  }
+
+  section h2 {
+    text-align: center;
+    grid-column: 1 / -1;
+  }
+
+  .data,
+  .weather {
+    border-bottom: 1px solid rgb(233, 233, 233);
+    grid-column: 1 / 2;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1em;
+    column-gap: 1em;
+    font-size: 1em;
+  }
+
+  .data-type {
+    display: inline;
+    font-weight: bold;
+    text-align: right;
+    height: 100%;
+  }
+
+  .answers {
+    text-align: left;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--norway-red);
+    height: 5em;
+    color: white;
+    margin: 0;
+    margin-top: auto;
+  }
+
+  #lastModified {
+    margin-top: auto;
+  }
+}
