@@ -1,0 +1,66 @@
+:root {
+  --primary-color: #a40424;
+  --secondary-color: rgb(24, 44, 184);
+  --third-color: rgb(4, 35, 122);
+  --white-text: #ffffff;
+  --font1: brittany signature;
+  --general-font: IBM Plex Serif;
+}
+
+@media screen and (min-width: 500px) {
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: var(--general-font);
+  }
+
+  header {
+      background-color: var(--primary-color);
+      color: var(--white-text);
+  }
+
+  h1 {
+    font-family: var(--font1);
+  }
+
+  main {
+    margin: 0 auto;
+  }
+
+  button {
+    background-color: var(--secondary-color);
+    color: var(--white-text);
+    border: none;
+    padding: 1em;
+  }
+
+  .link:hover {
+    color: var(--secondary-color);
+  }
+
+  a {
+    color: var(--white-text);
+  }
+
+  a:hover {
+    color: var(--secondary-color);
+  }
+
+  footer {
+    height: auto;
+    background-color: var(--primary-color);
+    margin: auto;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: var(--white-text);
+  }
+}
