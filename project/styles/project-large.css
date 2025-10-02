@@ -41,6 +41,10 @@
     padding: 1em;
   }
 
+  button:hover {
+    background-color: var(--third-color);
+  }
+
   .link:hover {
     color: var(--secondary-color);
   }
