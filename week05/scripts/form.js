@@ -1,7 +1,7 @@
 const date = new Date();
 const year = date.getFullYear();
 
-document.getElementById("footerYear").innerHTML = `&copySolaris Scolar ${year}`;
+document.getElementById("currentyear").innerHTML = year;
 
 const month = date.getMonth() + 1;
 const day = date.getDate();

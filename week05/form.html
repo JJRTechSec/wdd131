@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="description" content="A form for my assignment">
+    <meta name="author" content="Joseph Jameson-Rickard">
+
+    <!-- LINKS -->
+    <link rel="stylesheet" href="styles/form.css">
+
+    <!-- SCRIPT -->
+    <script src="scripts/form.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1> Product Review</h1>
+    </header>
+
+    <main>
+      <form method="get" action="review.html">
+        <label>Product Name
+          <select id="product" name="product" placeholder="Choose a Product ..." required>
+            <option value="">Please Select a Product</option>
+            <option value="strava">Strava</option>
+            <option value="garmin">Garmin</option>
+            <option value="coros">Coros</option>
+            <option value="RAG">Run and Grow</option>
+            <option value="NRC">Nike Run Club</option>
+            <option value="runna">Runna</option>
+          </select>
+        </label>
+
+        <legend>Overall Rating</legend>
+        <label>
+          &#9733<input type="radio" id="one" name="rating" required>
+          &#9733&#9733<input type="radio" id="two" name="rating">
+          &#9733&#9733&#9733<input type="radio" id="three" name="rating">
+          &#9733&#9733&#9733&#9733<input type="radio" id="four" name="rating">
+          &#9733&#9733&#9733&#9733&#9733<input type="radio" id="five" name="rating">
+        </label>
+
+        <label>Date of Installation:
+          <input type="date" id="installDate" name="installDate" required>
+        </label>
+
+        <label>
+          Which features did you find useful in the product?<br>
+          <em>(Check all that  apply)</em>
+        </label>
+        <input type="checkbox" id="durability" name="feature1" value="Durability">
+        <label for="feature1">Durability</label>
+        <input type="checkbox" id="easyUse" name="feature2" value="Ease of USe">
+        <label for="feature2">Ease of Use</label>
+        <input type="checkbox" id="performance" name="feature3" value="Performance">
+        <label for="feature3">Performance</label>
+        <input type="checkbox" id="design" name="feature4" value="Design">
+        <label for="feature4">Design</label>
+
+        <label>Written Review <em>(optional)</em>
+          <textarea id="writtenReview" name="review"></textarea>
+        </label>
+
+        <label>Your Name <em>(optional)</em>
+          <input type="text" id="username" name="name">
+        </label>
+
+        <input type="submit" value="Publish Review">
+      </form>
+    </main>
+
+    <footer>
+      <p>&copy;<span id="currentyear"></span> - Joseph Jameson-Rickard - United Kingdom/Norway</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

@@ -127,15 +127,15 @@
     color: var(--secondary-color);
   }
 
-  .sections {
+  .home .sections {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
     column-gap: 4em;
     padding: 4em;
   }
 
-  section:nth-child(1),
-  section:nth-child(2) {
+  .home section:nth-child(1),
+  .home section:nth-child(2) {
     display: grid;
     grid-template-rows: 50% auto auto;
     place-items: center;
@@ -228,6 +228,30 @@
     width: 25%;
   }
 
+    /* -------- ABOUT ---------*/
+
+    .about {
+      border: 1px solid green;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+      column-gap: 2rem;
+    }
+
+    .about h2 {
+      border: 1px solid blue;
+      grid-column: 1 / -1;
+      text-align: center;
+    }
+
+    .about-synne {
+      grid-column: 1 / 2;
+    }
+
+    .about-solaris {
+      grid-column: 1 / 5;
+    }
+
     /* -------- FOOTER --------*/
 
   footer {
@@ -260,6 +284,10 @@
 
   .footer-left a {
     text-decoration: none;
+  }
+
+  .footer-middle {
+    text-align: center;
   }
 
   .footer-right {
