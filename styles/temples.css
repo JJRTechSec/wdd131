@@ -22,6 +22,7 @@
     height: 1rem;
     align-items: center;
     padding: 15px;
+    color: var(--color2);
   }
 
   #menu {
@@ -102,10 +103,6 @@
     text-align: center;
   }
 
-  header {
-    color: var(--color2);
-  }
-
   main h2 {
     margin: 5%;
     font-size: 1.5em;
@@ -116,13 +113,13 @@
     height: 150px;
   }
 
-    footer {
-      background-color: var(--color1);
-      color: var(--color2);
-      text-align: center;
-      position: relative;
-      bottom: 0;
-      left: 0;
-      right: 0;
-    }
+  footer {
+    background-color: var(--color1);
+    color: var(--color2);
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
 }
